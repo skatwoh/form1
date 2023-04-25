@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skatwoh</title>
+    <link rel="shortcut icon" type="image/png" href="download.jpg" />
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body ng-app="myApp">
+    <header class="header">
+        <div class="header__inner">
+            <div class="logo">
+                Skatwoh
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero__thumb">
+            <img src="https://images.unsplash.com/photo-1681068420510-cb528c65d595?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+                alt="" width="100%">
+        </div>
+    </div>
+    <div class="content flow">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat assumenda facilis ut rerum quae totam
+            consequuntur amet voluptas placeat, maiores laudantium alias a quia ea corrupti optio nesciunt blanditiis
+            veritatis!</p>
+        <h2>Heading level 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque in quia illo iste cumque distinctio
+            dignissimos animi, id suscipit quaerat, non consequatur alias quos enim voluptates ad nulla? Explicabo,
+            consectetur!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, sequi numquam in explicabo sunt fugit ad quo
+            eos? Assumenda dicta doloribus ipsa quaerat explicabo magnam libero. Ratione aspernatur repellendus
+            recusandae.</p>
+        <p>Natus quam similique ea, recusandae reiciendis blanditiis rerum totam praesentium dignissimos, distinctio,
+            mollitia quae. Aliquid obcaecati vero a ullam voluptates! Nostrum beatae rerum facere a, dolores minus fuga
+            ullam in.</p>
+        <p>Perspiciatis asperiores nemo, nostrum facere, atque neque quis sed officia labore doloremque placeat modi
+            debitis? Hic ad enim ut blanditiis quis minus! Tempore error magni sed nobis, eveniet odio asperiores!</p>
+        <p>Dolore molestiae praesentium beatae voluptate, sint modi iusto magni sit distinctio consequuntur alias
+            corporis? Numquam inventore, nulla maxime provident voluptatum alias dicta. Similique neque hic quod
+            suscipit reiciendis nam consequatur.</p>
+        <h2>Heading level 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque in quia illo iste cumque distinctio
+            dignissimos animi, id suscipit quaerat, non consequatur alias quos enim voluptates ad nulla? Explicabo,
+            consectetur!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, sequi numquam in explicabo sunt fugit ad quo
+            eos? Assumenda dicta doloribus ipsa quaerat explicabo magnam libero. Ratione aspernatur repellendus
+            recusandae.</p>
+        <p>Natus quam similique ea, recusandae reiciendis blanditiis rerum totam praesentium dignissimos, distinctio,
+            mollitia quae. Aliquid obcaecati vero a ullam voluptates! Nostrum beatae rerum facere a, dolores minus fuga
+            ullam in.</p>
+        <p>Perspiciatis asperiores nemo, nostrum facere, atque neque quis sed officia labore doloremque placeat modi
+            debitis? Hic ad enim ut blanditiis quis minus! Tempore error magni sed nobis, eveniet odio asperiores!</p>
+        <p>Dolore molestiae praesentium beatae voluptate, sint modi iusto magni sit distinctio consequuntur alias
+            corporis? Numquam inventore, nulla maxime provident voluptatum alias dicta. Similique neque hic quod
+            suscipit reiciendis nam consequatur.</p>
+    </div>
+    <br>
+    <hr>
+    <div ng-controller="myCtrl" >
+        <h2>Thông tin cá nhân</h2>
+        <form name="form" ng-submit="onSubmit($event)">
+            <label for="ho_ten">Họ tên:</label>
+            <input type="text" id="ho_ten" name="ho_ten" ng-model="xe.ho_ten"><br><br>
+            <label for="dia_chi">Địa chỉ:</label>
+            <input type="text" id="dia_chi" name="dia_chi" ng-model="xe.dia_chi"><br><br>
+            <label for="dien_thoai">Điện thoại:</label>
+            <input type="text" id="dien_thoai" name="dien_thoai" ng-model="xe.dien_thoai"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="js.js"></script>
+    
+</body>
+
+</html>
