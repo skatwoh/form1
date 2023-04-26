@@ -1,25 +1,5 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.config(function ($routeProvider, $locationProvider) {
-    $locationProvider.hashPrefix("");
-
-    $routeProvider
-        .when("/books", {
-            templateUrl: "./trangchu.html"
-        })
-        .when("/page", {
-            templateUrl: "./page.html"
-        })
-        .when("/books/add", {
-            templateUrl: "./them.html"
-        })
-        .when("/books/delete", {
-            templateUrl: "./xoa.html"
-        })
-        .otherwise({
-            redirectTo: "/books"
-        })
-})
 
 let xeApi = "https://643eafd46c30feced8304742.mockapi.io/skatwoh/info";
 
