@@ -44,7 +44,7 @@ myApp.controller("myCtrl", function ($scope, $http) {
                 .then(function () {
                     $scope.hienThiXe.push($scope.xe)
                     alert("Cảm ơn bạn đã điền thông tin")
-                    window.location = "https://www.facebook.com/";
+                    window.location = "dich.html";
                 })
                 .catch(function (e) {
                     console.log(e);
